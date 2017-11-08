@@ -1,0 +1,20 @@
+.column-section{}
+.columns-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.columns-item{
+  margin-top: 60px;
+
+  &:nth-child(-n+3){
+    margin-top: 0;
+  }
+}
+.columns-item-title{
+  margin-bottom: 27px;
+}
+.columns-item-text{
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}

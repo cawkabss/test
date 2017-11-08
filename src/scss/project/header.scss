@@ -1,0 +1,168 @@
+.main-header {
+  position: relative;
+}
+
+.main-header-wrapper {}
+
+.company {
+  position: relative;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.company-link {
+}
+
+.company-logo {
+  width: 70px;
+}
+
+.company-title {
+  display: none;
+}
+
+.mob-nav-burger, .mob-nav-close {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mob-nav-burger {
+  display: none;
+  left: 0;
+
+  &[data-show="true"] {
+    display: inline-block;
+  }
+}
+
+.mob-nav-burger-line {
+  display: block;
+  width: 15px;
+  height: 1px;
+  background-color: #000;
+  margin-top: 5px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.mob-nav-close {
+  display: none;
+  right: 0;
+  color: #000;
+
+  &[data-show="true"] {
+    display: inline-block;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+
+  &:after {
+    content: 'X';
+    font-size: 20px;
+  }
+}
+
+.main-nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: none;
+  padding: 35px 0;
+  z-index: 1;
+}
+
+.main-nav-list {
+}
+
+.main-nav-item {
+  margin-top: 36px;
+  line-height: 1;
+  text-align: center;
+}
+
+.main-nav-item-link {
+  font-size: 14px;
+  color: $main-font-color;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+    color: #545ad8;
+  }
+}
+
+/* RESPONSIVE */
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .main-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-nav {
+    display: block;
+    width: auto;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .mob-nav-burger, .mob-nav-close {
+    &[data-show="true"], &[data-show="false"] {
+      display: none;
+    }
+  }
+  .company{
+    display: flex;
+    align-items: center;
+  }
+  .company-link{
+    display: flex;
+    align-items: center;
+
+    &:hover{
+      text-decoration: none;
+      color: $main-font-color;
+    }
+  }
+  .company-logo{
+    margin-right: 30px;
+  }
+  .company-title{
+    display: block;
+    color: $main-font-color;
+    text-transform: uppercase;
+  }
+  .main-nav{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background: transparent;
+  }
+  .main-nav-item{
+    margin: 0 25px 0 0;
+
+    &:last-child{
+      margin: 0;
+    }
+  }
+  .main-nav-list{
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+}

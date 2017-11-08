@@ -1,0 +1,32 @@
+/* -------- Normalize -------- */
+@import '../../node_modules/node.normalize.scss/normalize';
+
+/* -------- Bootstrap -------- */
+
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+/* -------- Font Awesome -------- */
+@import '../../node_modules/font-awesome/scss/font-awesome.scss';
+
+/* -------- Slick Carousel -------- */
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+$slick-font-path: "../fonts/";
+$slick-dot-color: white;
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+/* -------- Base -------- */
+
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/headings';
+@import 'base/base';
+
+/* -------- Project -------- */
+
+@import 'project/full-slider';
+@import 'project/header';
+@import 'project/mini-slider';
+@import 'project/column';
+@import 'project/article';
+@import 'project/map';

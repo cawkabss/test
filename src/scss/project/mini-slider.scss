@@ -1,0 +1,79 @@
+
+.ms-controls{
+  width: 140px;
+  margin: 35px auto 0 auto;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.ms-prev-arrow, .ms-next-arrow{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $main-font-color;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all .2s;
+
+  svg{
+    width: 15px;
+    fill: $main-font-color;
+    transition: all .2s;
+  }
+
+  &:hover svg{
+    fill: $main-font-color-invert;
+  }
+  &:hover{
+    background-color: $main-font-color;
+  }
+}
+
+.ms-prev-arrow{
+  transform: rotate(180deg);
+}
+
+.ms-next-arrow{}
+
+@media only screen and (min-width : 768px) {
+  .slick-slide {
+    margin-right: 20px;
+  }
+  /* the parent */
+  .slick-list {
+    margin-right:-20px;
+  }
+  .ms-gallery-item-img{
+    height: 180px;
+
+    object-fit: cover;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .ms-controls{
+    width: 100%;
+    margin: 0;
+  }
+  .ms-prev-arrow, .ms-next-arrow{
+    position: absolute;
+    top: -90px;
+  }
+  .ms-prev-arrow{
+    left: 0;
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .ms-next-arrow{
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
