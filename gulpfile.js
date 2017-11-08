@@ -119,5 +119,5 @@ gulp.task('watch', function(){
 /* -------- Default -------- */
 
 gulp.task('default', function(){
-    return sequence('clean', ['compile:html', 'compile:js', 'compile:styles', 'sprite', 'copy'], ['watch', 'server'])
+    return sequence('clean', ['compile:html', 'compile:js', 'compile:styles', 'copy'], ['watch', 'server'])
 });
