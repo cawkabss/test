@@ -4,15 +4,15 @@
 .fs-item{
 
   &[data-slide="1"]{
-    background: url('../../imgs/slider.jpg') no-repeat center/cover;
+    background: url('../../builds/imgs/slider.jpg') no-repeat center/cover;
   }
 
   &[data-slide="2"]{
-    background: url('../../imgs/slider2.jpg') no-repeat center/cover;
+    background: url('../../builds/imgs/slider2.jpg') no-repeat center/cover;
   }
 
   &[data-slide="3"]{
-    background: url('../../imgs/slider3.jpg') no-repeat center/cover;
+    background: url('../../builds/imgs/slider3.jpg') no-repeat center/cover;
   }
 }
 .fs-item-wrapper{
